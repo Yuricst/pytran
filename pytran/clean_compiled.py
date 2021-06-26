@@ -7,7 +7,7 @@ import os
 def clean_compiled(extensions="all"):
 	"""Remove compiled files"""
 	if extensions=="all":
-		ext_list = ["so", "exe", "out"]
+		ext_list = ["so", "exe", "out", "mod"]
 	else:
 		ext_list = [extensions]
 	for ext in ext_list:
