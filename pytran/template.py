@@ -7,11 +7,13 @@ import os
 
 
 def template_module(module="template", extension="f90", temp_function=True, temp_subroutine=True):
-    """Get template for fortran file
+    """Get template module fortran file
     
     Args:
         module (str): name of module
         extension (str): extension, e.g. "f90"
+        temp_function (bool): include template function in module
+        temp_subroutine (bool): include template subroutine in module
     """
     # get file path
     filepath = f"./{module}.{extension}"
