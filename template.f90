@@ -8,8 +8,6 @@ module template
   private
   public :: foo
   public :: bar
-  implicit none
-
 contains
 
   function foo(a) result(b)

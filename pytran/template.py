@@ -26,8 +26,7 @@ def template_module(module="template", extension="f90", temp_function=True, temp
         if temp_function==True:
             f.write(f"  public :: foo\n")
         if temp_subroutine==True:
-            f.write(f"  public :: bar\n")
-        f.write(f"  implicit none\n\n")
+            f.write(f"  public :: bar\n\n")
 
         f.write(f"contains\n\n")
 
